@@ -7,3 +7,5 @@
 1354211581755	Extract local variable 'board'
 1354211601692	Extract method 'createBoard'
 1354211623918	Introduce parameter for 'createBoard'
+1354211764873	Extract method 'placeToken'
+1354211779005	Introduce parameter for 'placeToken'

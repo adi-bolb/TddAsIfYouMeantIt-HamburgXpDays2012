@@ -7,8 +7,16 @@ public class Something {
 
 	@Test
 	public void x_will_win_on_a_board_with_1_cell(){
-		String board = createBoard("X");
+		String board = createBoard("");
+		
+		board = placeToken(board, "X");
+		
 		assertEquals(board, determineResultForBoard(board));
+	}
+
+	private String placeToken(String board, String token) {
+		board += token;
+		return board;
 	}
 
 	private String createBoard(String boardContent) {

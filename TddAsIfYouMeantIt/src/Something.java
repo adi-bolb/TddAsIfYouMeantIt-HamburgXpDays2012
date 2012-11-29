@@ -67,6 +67,8 @@ public class Something {
 		return placeToken(board, "0");
 	}
 	
+	// This method is not created by TDD as if you meant it.
+	// It just shows that the test resulted from TDD as if you meant it is pure functional.
 	public void play(){
 		determineResultForBoardWhenWinner(place0(placeX(place0(createEmptyBoard()))));
 	}

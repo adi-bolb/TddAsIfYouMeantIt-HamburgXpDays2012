@@ -7,7 +7,7 @@ public class Something {
 
 	@Test
 	public void x_will_win_on_a_board_with_1_cell(){
-		String board = createBoard("");
+		String board = createEmptyBoard();
 		
 		board = placeToken(board, "X");
 		
@@ -19,8 +19,8 @@ public class Something {
 		return board;
 	}
 
-	private String createBoard(String boardContent) {
-		return boardContent;
+	private String createEmptyBoard() {
+		return "";
 	}
 
 	private String determineResultForBoard(String board) {
@@ -29,7 +29,7 @@ public class Something {
 	
 	@Test
 	public void there_will_be_a_draw_on_a_two_by_one_board() {
-		String emptyBoard = createBoard("");
+		String emptyBoard = createEmptyBoard();
 		String boardWithX = placeToken(emptyBoard, "X");
 		String boardWithXAnd0 = placeToken(boardWithX, "0");
 		String result = "draw";

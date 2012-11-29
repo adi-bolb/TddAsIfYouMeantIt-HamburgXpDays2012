@@ -10,3 +10,5 @@
 1354211764873	Extract method 'placeToken'
 1354211779005	Introduce parameter for 'placeToken'
 1354211871346	Rename local variable 'board'
+1354212292380	Change method 'createBoard'
+1354212348220	Rename method 'createBoard'

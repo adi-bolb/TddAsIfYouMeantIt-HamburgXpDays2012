@@ -22,34 +22,52 @@ public class Something {
 		return "";
 	}
 
-	private String determineResultForBoard(String board) {
-		return board;
-	}
 	
 	@Test
 	public void x_will_win_on_a_board_with_1_cell(){
 		String board = emptyBoard;
+
 		String boardWithX = placeX(board);
-		assertEquals("X", determineResultForBoard(boardWithX));
+		
+		assertEquals(winnerXResult(), determineResultForBoardWhenWinner(boardWithX));
 	}
 
-	private String placeX(String board) {
-		return placeToken(board, "X");
-	}
 
 	@Test
 	public void there_will_be_a_draw_on_a_two_by_one_board() {
 		String boardWithX = placeX(emptyBoard);
 		String boardWithXAnd0 = place0(boardWithX);
-		String result = "draw";
-		boardWithXAnd0 = "draw";
 		
-		String actualResult = boardWithXAnd0;
+		String actualResult = getResultForBoardWhenDraw(boardWithXAnd0);
 
-		assertEquals(result, actualResult);
+		assertEquals(drawResult(), actualResult);
 	}
 
-	private String place0(String z) {
-		return placeToken(z, "0");
+	private String placeX(String board) {
+		return placeToken(board, "X");
+	}
+	
+	private String getResultForBoardWhenDraw(String board) {
+		return drawResult();
+	}
+
+	private String drawResult() {
+		return "draw";
+	}
+
+	private String determineResultForBoardWhenWinner(String board) {
+		return winnerXResult();
+	}
+
+	private String winnerXResult() {
+		return "X";
+	}
+
+	private String place0(String board) {
+		return placeToken(board, "0");
+	}
+	
+	public void play(){
+		determineResultForBoardWhenWinner(place0(placeX(place0(createEmptyBoard()))));
 	}
 }

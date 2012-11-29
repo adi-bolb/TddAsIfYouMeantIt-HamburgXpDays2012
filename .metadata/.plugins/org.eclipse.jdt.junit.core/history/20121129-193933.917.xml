@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Something" project="TddAsIfYouMeantIt" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="Something" time="0.001">
-    <testcase name="x_will_win_on_a_board_with_1_cell" classname="Something" time="0.0"/>
-    <testcase name="there_will_be_a_draw_on_a_two_by_one_board" classname="Something" time="0.0"/>
-  </testsuite>
-</testrun>

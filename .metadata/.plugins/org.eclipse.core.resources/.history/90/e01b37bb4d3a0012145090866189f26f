@@ -12,7 +12,8 @@ public class Something {
 	}
 
 	private String createBoard(String boardContent) {
-		return boardContent;
+		String board = boardContent;
+		return board;
 	}
 
 	private String determineResultForBoard(String board) {

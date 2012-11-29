@@ -12,3 +12,9 @@
 1354211871346	Rename local variable 'board'
 1354212292380	Change method 'createBoard'
 1354212348220	Rename method 'createBoard'
+1354212533789	Convert local variable 'board' to field
+1354212597221	Rename field 'board'
+1354212812652	Rename local variable 'board'
+1354212852810	Extract local variable 'board'
+1354212901652	Extract method 'placeX'
+1354213053517	Extract method 'place0'

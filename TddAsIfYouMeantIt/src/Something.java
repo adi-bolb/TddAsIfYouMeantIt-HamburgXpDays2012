@@ -29,7 +29,14 @@ public class Something {
 	
 	@Test
 	public void there_will_be_a_draw_on_a_two_by_one_board() {
-		String board = "draw";
-		assertEquals(board, determineResultForBoard(board));
+		String emptyBoard = createBoard("");
+		String boardWithX = placeToken(emptyBoard, "X");
+		String boardWithXAnd0 = placeToken(boardWithX, "0");
+		String result = "draw";
+		boardWithXAnd0 = "draw";
+		
+		String actualResult = boardWithXAnd0;
+
+		assertEquals(result, actualResult);
 	}
 }
